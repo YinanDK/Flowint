@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>FLOW INTelligence</title>
+    <link rel="stylesheet" href="stylesheet/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="asset/css/bootstrap.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" lang="da" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <script type="text/javascript" src="javascript/vue.js"></script>
+    <style type="text/css">
+    .navigation {
+        /*      padding-top: 30px;
+      padding-bottom: 30px;*/
+        background-color: #000;
+        box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.15);
+        font-size: 14px;
+        font-weight: 600;
+
+        width: 100%;
+        z-index: 1;
+        line-height: 61px;
+        padding: 0 2%;
+        position: fixed;
+        top: 0;
+    }
+
+    .page-logo {
+        margin-top: 0px;
+        float: left;
+    }
+
+    .navbar-right {
+        float: right;
+    }
+
+    .navbar-right ul {
+        margin-bottom: 0px;
+    }
+
+    .navbar-right a {
+        text-decoration: none;
+        padding: 10px;
+        font-family: Arial;
+        font-weight: 900;
+        color: #fff !important;
+    }
+
+    .navbarlink:hover {
+        text-decoration: underline;
+    }
+
+    .navbarlogo {
+        text-decoration: none;
+        font-family: Arial;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 50px;
+        color:  #2CF3D4;
+    }
+
+
+    h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .contentContact {
+        margin-top: 65px;
+    }
+    #elsecontent{
+        text-align: center;
+
+    }
+    .elseInputBox{
+        width:700px;
+        height: 40px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <nav class="navigation">
+                <img src="image/LogoRobot_flowint.dk_.gif" class="page-logo" width="60px">
+                <a href="index.html" class="navbarlogo">FlowINT</a>
+                <div class="navbar-right">
+                    <ul>
+                        <a href="#" class="navbarlink">About me</a>
+                        <a href="#" class="navbarlink">Work</a>
+                        <a href="#" class="navbarlink">Contact</a>
+                    </ul>
+                </div>
+            </nav>
+            <!-- <div class="video-container">
+              <video autoplay loop muted id="myvideo">
+                <source src="video/background.mp4" type="video/mp4">
+              </video> 
+            </div>  -->
+        </div>
+    </header>
+    <div id="contactcontent" class="container contentContact">
+        <h2>Hvad er vigtigt for, at Jeres virksomhed kan skabe værdi?</h2>
+        <p>
+            content of contact <a href="#" class="readme">［Read me］</a>
+        </p>
+        <div class="row">
+            <div class="col-lg-3">
+                <h4 class="text-center"> PROCESSER</h4>
+                <div class="well ProcesserList" style="max-height: 200px;overflow: auto;">
+                    <ul class="list-group checked-list-box">
+                        <li class="list-group-item">
+                            <input type="checkbox" id="Gennemsigtighed" value="Gennemsigtighed" v-model="checkedNames1"> Gennemsigtighed</li>
+                        <li class="list-group-item" data-checked="true">
+                            <input type="checkbox" id="Kvalitetsstyring" value="Kvalitetsstyring" v-model="checkedNames1"> Kvalitetsstyring</li>
+                        <li class="list-group-item">
+                            <input type="checkbox" id="End-to-end optimering" value="End-to-end optimering" v-model="checkedNames1"> End-to-end optimering</li>
+                        <li class="list-group-item">
+                            <input type="checkbox"> //</li>
+                        <li class="list-group-item">
+                            <input type="checkbox"> //</li>
+                        <!-- <li class="list-group-item"><a href="#">Læs mere...</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="text-center"> SAMARBEJDER</h4>
+                <div class="well ProcesserList" style="max-height: 200px;overflow: auto;">
+                    <ul class="list-group checked-list-box">
+                        <li class="list-group-item">
+                            <input type="checkbox" id="Sammenhængskraft" value="Sammenhængskraft" v-model="checkedNames2"> Sammenhængskraft</li>
+                        <li class="list-group-item">
+                            <input type="checkbox" id="Engagement" value="Engagement" v-model="checkedNames2"> Engagement</li>
+                        <li class="list-group-item">
+                            <input type="checkbox" id="ECollaboration" value="Collaboration" v-model="checkedNames2"> Collaboration</li>
+                        <li class="list-group-item">
+                            <input type="checkbox"> //</li>
+                        <li class="list-group-item">
+                            <input type="checkbox"> //</li>
+                        <!-- <li class="list-group-item"><a href="#">Læs mere...</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="text-center"> AGILITET</h4>
+                <div class="well ProcesserList" style="max-height: 200px;overflow: auto;">
+                    <ul class="list-group checked-list-box">
+                        <li class="list-group-item">
+                            <input type="checkbox" id="Time-to-market" value="Time-to-market" v-model="checkedNames3"> Time-to-market</li>
+                        <li class="list-group-item" data-checked="true">
+                            <input type="checkbox" id="Kontinuerlig forbedring" value="Kontinuerlig forbedring" v-model="checkedNames3"> Kontinuerlig forbedring</li>
+                        <li class="list-group-item">
+                            <input type="checkbox" id="Innovation" value="Innovation" v-model="checkedNames3"> Innovation</li>
+                        <li class="list-group-item">
+                            <input type="checkbox"> //</li>
+                        <li class="list-group-item">
+                            <input type="checkbox"> //</li>
+                        <!-- <li class="list-group-item"><a href="#">Læs mere...</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="text-center"> RELATIONER</h4>
+                <div class="well ProcesserList" style="max-height: 200px;overflow: auto;">
+                    <ul class="list-group checked-list-box">
+                        <li class="list-group-item">
+                            <input type="checkbox" id="Kundeoplevelse" value="Kundeoplevelse" v-model="checkedNames4"> Kundeoplevelse </li>
+                        <li class="list-group-item" data-checked="true">
+                            <input type="checkbox" id="Co-creation" value="Co-creation" v-model="checkedNames4"> Co-creation
+                        </li>
+                        <li class="list-group-item">
+                            <input type="checkbox" id="Partner alignment" value="Partner alignment" v-model="checkedNames4"> Partner alignment</li>
+                        <li class="list-group-item">
+                            <input type="checkbox"> //</li>
+                        <li class="list-group-item">
+                            <input type="checkbox"> //</li>
+                        <!-- <li class="list-group-item"><a href="#">Læs mere...</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div>
+            <span>PROCESSER: {{ checkedNames1 }}</span>
+            <br>
+            <span>SAMARBEJDER: {{ checkedNames2 }}</span>
+            <br>
+            <span>AGILITET: {{ checkedNames3 }}</span>
+            <br>
+            <span>RELATIONER: {{ checkedNames4 }}</span>
+            <br>
+            
+        </div>
+    </div>
+    
+    <div id ="elsecontent">
+                        <input class="elseInputBox" type="text" placeholder="what else that is important for your company" @keyup.enter="addTodo" v-model="newTodo"> 
+                        <ul>
+                        <li v-for="todo in todos"> 
+                {{todo.content}}
+                <a href="#" @click.prevent="removeTodo(todo)"> delet</a>
+                       </li>
+                   </ul>
+            <br> 
+    </div>
+    <script>
+    
+
+     var contactcontent = new Vue({
+         el: '#contactcontent',
+         data: {
+             checkedNames1: [],
+             checkedNames2: [],
+             checkedNames3: [],
+             checkedNames4: []
+         }
+             });
+
+    var elsecontent = new Vue({
+        el: '#elsecontent',
+        data: {
+            todos: [],
+            newTodo:''
+        },
+         methods: {
+             addTodo: function(){
+                 this.todos.push({content:this.newTodo, completed: false})
+             },
+             removeTodo: function(){
+                 this.todos.splice(this.todos.indexOf(this.newTodo),1);
+             }}
+
+    })
+
+    </script>
+</body>
+
+</html>
