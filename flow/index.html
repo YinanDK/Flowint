@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>FLOW INTelligence</title>
+    <!-- <link rel="stylesheet" href="stylesheet/styles.css" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="asset/css/bootstrap.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" lang="da" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <script type="text/javascript" src="javascript/vue.js"></script>
+    <style type="text/css">
+    body {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.428571429;
+    }
+
+    .navigation {
+        /*      padding-top: 30px;
+      padding-bottom: 30px;*/
+        background-color: #000;
+        box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.15);
+        font-size: 14px;
+        font-weight: 600;
+
+        width: 100%;
+        z-index: 1;
+        line-height: 61px;
+        padding: 0 2%;
+        position: fixed;
+        top: 0;
+    }
+
+    .page-logo {
+        margin-top: 0px;
+        float: left;
+    }
+
+    .navbar-right {
+        float: right;
+    }
+
+    .navbar-right ul {
+        margin-bottom: 0px;
+    }
+
+    .navbar-right a {
+        text-decoration: none;
+        padding: 10px;
+        font-family: Arial;
+        font-weight: 900;
+        color: #fff !important;
+    }
+
+    .navbarlink:hover {
+        text-decoration: underline;
+    }
+
+    .navbarlogo {
+        text-decoration: none;
+        font-family: Arial;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 50px;
+        color:  #2CF3D4;
+    }
+
+    .navbarlogo:hover {
+        text-decoration: underline;
+    }
+
+   .video-container {
+        z-index: -100;
+        width: 100%;
+        height: 75%;
+        overflow: hidden;
+        /*position: absolute;*/
+        /*top: -300;*/
+        left: 0;
+       /* margin-right: 0px;
+        margin-top: 61px;*/
+    }
+
+    #myvideo {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .contentAboutme {
+        padding: 40px 30px;
+
+        
+    }
+
+    /*.contentWork {
+        margin: 80px 20px;
+
+    }*/
+    .contentContact{
+       padding-left: 30px;
+    }
+
+    .recyclelogo {
+        width: 333px;
+        height: auto;
+    }
+
+    .btn-circle {
+        width: 150px;
+        height: 150px;
+        padding: 10px 16px;
+        font-size: 20px;
+        line-height: 1.33;
+        border-radius: 75px;
+    }
+
+    #btn1,
+    #btn2,
+    #btn3 {
+        /*        z-index: 0;*/
+        position: absolute;
+        color: #000;
+    }
+
+    #btn1 {
+        top: 1px;
+        left: 105px;
+        background-color: #04B1C5;
+    }
+
+    #btn2 {
+        top: 150px;
+        left: 20px;
+        background-color: #D7191B;
+    }
+
+    #btn3 {
+        top: 150px;
+        left: 192px;
+        background-color: #B9B901;
+    }
+
+    .button {
+        position: relative;
+        margin: 0;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 2.8px;
+        padding-bottom: 2.8px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .buttonbar a {
+        background-color: #f2f2f2;
+    }
+    /*.button:hover { background:#fff; }*/
+
+    .button::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 0;
+        height: 0;
+    }
+
+
+    .processer::after {
+        border-style: solid;
+        right: -22px;
+        border-width: 22px/2;
+        border-color: #f2f2f2 b/*order-color: #B9B901;*/
+    }
+    /*.robotdiv{
+  display: none;
+}
+.designdiv{
+  display: none;
+}*/
+    /*.performdiv{
+  display: none;
+}*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <nav class="navigation">
+                <img src="image/LogoRobot_flowint.dk_.gif" class="page-logo" width="60px">
+                <a href="index.html" class="navbarlogo">FlowINT</a>
+                <div class="navbar-right">
+                    <ul>
+                        <a href="#aboutme" class="navbarlink">About me</a>
+                        <a href="#app" class="navbarlink">Work</a>
+                        <a href="contact.html" class="navbarlink">Contact</a>
+                    </ul>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+    <!--  FIRST DIV -->
+    <div id="aboutme" class="contentAboutme">
+        <h2>Grow your business with Flowint</h2>
+        <p>
+            <div class="video-container">
+              <video autoplay loop muted id="myvideo">
+                <source src="video/background.mp4" type="video/mp4">
+              </video> 
+            </div> 
+            
+            content of about me <a href="#" class="readme">［Read me］</a>
+        </p>  
+    </div>
+    <div id="contactcontent" class="container contentContact" style="margin-top:20px;">
+        <h2>Be better than the rest</h2>
+        <p>
+            content of contact <a href="#" class="readme">［Read me］</a>
+        </p>
+        <div class="row">
+            <div class="col-lg-3">
+                <h4 class="text-center"> PROCESSER</h4>
+                <div class="well ProcesserList" style="max-height: 300px;overflow: auto;">
+                    <ul class="list-group checked-list-box">
+                        <li class="list-group-item">
+                            <input type="checkbox"> Gennemsigtighed</li>
+                        <li class="list-group-item" data-checked="true">
+                            <input type="checkbox"> Kvalitetsstyring</li>
+                        <li class="list-group-item">
+                            <input type="checkbox"> End-to-end optimering</li>
+                        <li class="list-group-item"><a href="#">Læs mere...</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="text-center"> SAMARBEJDER</h4>
+                <div class="well ProcesserList" style="max-height: 300px;overflow: auto;">
+                    <ul class="list-group checked-list-box">
+                        <li class="list-group-item">
+                            <input type="checkbox"> Sammenhængskraft</li>
+                        <li class="list-group-item" data-checked="true">
+                            <input type="checkbox"> Engagement</li>
+                        <li class="list-group-item">
+                            <input type="checkbox"> Collaboration</li>
+                        <li class="list-group-item"><a href="#">Læs mere...</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="text-center"> AGILITET</h4>
+                <div class="well ProcesserList" style="max-height: 300px;overflow: auto;">
+                    <ul class="list-group checked-list-box">
+                        <li class="list-group-item">
+                            <input type="checkbox"> Time-to-market</li>
+                        <li class="list-group-item" data-checked="true">
+                            <input type="checkbox"> Kontinuerlig forbedring</li>
+                        <li class="list-group-item">
+                            <input type="checkbox"> Innovation</li>
+                        <li class="list-group-item"><a href="#">Læs mere...</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="text-center"> RELATIONER</h4>
+                <div class="well ProcesserList" style="max-height: 300px;overflow: auto;">
+                    <ul class="list-group checked-list-box">
+                        <li class="list-group-item">
+                            <input type="checkbox"> Kundeoplevelse</li>
+                        <li class="list-group-item" data-checked="true">
+                            <input type="checkbox"> Co-creation
+                        </li>
+                        <li class="list-group-item">
+                            <input type="checkbox"> Partner alignment</li>
+                        <li class="list-group-item"><a href="#">Læs mere...</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container contentWork" id="app">
+        <!-- <h2>Work</h2> -->
+        <div class="row">
+            <h2>Inovative business model</h2>
+            <div class="col-lg-5">
+                <img src="image/cyklus_flowint.com_.png" class="recyclelogo">
+                <button type="button" class="btn btn-info btn-circle btn-xl" id="btn1" v-on:click="displayBlock('1')">
+                    Udførdaglige
+                    <br> opgaver
+                    <br> Flow Robot
+                </button>
+                <button type="button" class="btn btn-info btn-circle btn-xl" id="btn2" v-on:click="displayBlock('2')">
+                    Optimer
+                    <br> Flow Design
+                </button>
+                <button type="button" class="btn btn-info btn-circle btn-xl" id="btn3" v-on:click="displayBlock('3')">
+                    Monitorer
+                    <br> Flow Perform
+                </button>
+            </div>
+            <div class="col-lg-7">
+                <div id="flowrobot" class="robotdiv" v-show="showFlowRobot">
+                    <h2>Flow Robot</h2>
+                    <p>
+                        content of flow robot <a href="#" class="readme">［Read me］</a>
+                    </p>
+                </div>
+                <div id="flowdesign" class="designdiv" v-show="showFlowDesign">
+                    <h2>Flow Design</h2>
+                    <p>
+                        content of flow design <a href="#" class="readme">［Read me］</a>
+                    </p>
+                </div>
+                <div id="flowperform" class="performdiv" v-show="showFlowPerform">
+                    <h2>Flow Perform</h2>
+                    <p>
+                        content of flow perform <a href="#" class="readme">［Read me］</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--  <div class="buttonbar col-lg-5" >
+      <button><a href="#" class="button Processer">Processer</a></button></br>
+      <button><a href="#" class="button Processer">Processer</a></button></br>
+      <button><a href="#" class="button Processer">Processer</a></button>
+      
+    </div>    -->
+    
+    <!--     <script src="javascript/javascript.js">
+     var box=document.getElementByID("app")
+      var flowrobot=document.getElementByID("flowrobot")
+      var fowdesign=document.getElementByID("flowdesign")
+      var flowperform=document.getElementByID("flowperform")
+      function button1click(){
+        if (floerobot.style.display=="none") {}
+               box.innerHTML=flowrobot.innerHTML
+               
+      }
+      function button2click(){
+               box.innerHTML=flowdesign
+      }
+      function button3click(){
+               box.innerHTML=flowperform
+      }
+
+    </script> -->
+    <script>
+    new Vue({
+        el: '#app',
+        data: {
+            showFlowRobot: true,
+            showFlowDesign: false,
+            showFlowPerform: false,
+        },
+        methods: {
+            displayBlock: function(id) {
+                this.showFlowRobot = false;
+                this.showFlowDesign = false;
+                this.showFlowPerform = false;
+                if (id == '1')
+                    this.showFlowRobot = true;
+                else if (id == '2')
+                    this.showFlowDesign = true;
+                else if (id == '3')
+                    this.showFlowPerform = true;
+            }
+
+        }
+    })
+    </script>
+</body>
+
+</html>
