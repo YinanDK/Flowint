@@ -3,6 +3,7 @@
 
 <head>
     <title>FLOW INTelligence</title>
+    <!-- <link rel="stylesheet" href="stylesheet/styles.css" /> -->
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link href="asset/css/bootstrap.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width initial-scale=1" />
@@ -75,16 +76,16 @@
         text-decoration: underline;
     }
 
-    .video-container {
+   .video-container {
         z-index: -100;
         width: 100%;
         height: 75%;
         overflow: hidden;
-        position: absolute;
-        top: -300;
+        /*position: absolute;*/
+        /*top: -300;*/
         left: 0;
-        margin-right: 0px;
-        margin-top:-100px;
+       /* margin-right: 0px;
+        margin-top: 61px;*/
     }
 
     #myvideo {
@@ -97,15 +98,18 @@
     }
 
     .contentAboutme {
-        padding: 80px 30px;
+        padding: 40px 30px;
+
+        
     }
 
-    .contentWork {
-        padding: 80px 20px;
-    }
-    /*.contentContact{
-       padding-left: 30px;
+    /*.contentWork {
+        margin: 80px 20px;
+
     }*/
+    .contentContact{
+       padding-left: 30px;
+    }
 
     .recyclelogo {
         width: 333px;
@@ -206,64 +210,24 @@
                     </ul>
                 </div>
             </nav>
-             <div class="video-container">
-              <video autoplay loop muted id="myvideo">
-                <source src="video/background.mp4" type="video/mp4">
-              </video> 
-            </div>  -->
+            
         </div>
     </header>
     <!--  FIRST DIV -->
     <div id="aboutme" class="contentAboutme">
-        <h2>HVAD ER FLOWINT?</h2>
+        <h2>Grow your business with Flowint</h2>
         <p>
+            <div class="video-container">
+              <video autoplay loop muted id="myvideo">
+                <source src="video/background.mp4" type="video/mp4">
+              </video> 
+            </div> 
+            
             content of about me <a href="#" class="readme">［Read me］</a>
-        </p>
-        <!-- <video width:"640px"><source src="http://flowint.com/wp-content/uploads/2015/10/Flowint_2.mp4" type="video/mp4"></video> -->
-    </div>
-    <div class="container contentWork" id="app">
-        <!-- <h2>Work</h2> -->
-        <div class="row">
-            <div class="col-lg-5">
-                <img src="image/cyklus_flowint.com_.png" class="recyclelogo">
-                <button type="button" class="btn btn-info btn-circle btn-xl" id="btn1" v-on:click="displayBlock('1')">
-                    Udførdaglige
-                    <br> opgaver
-                    <br> Flow Robot
-                </button>
-                <button type="button" class="btn btn-info btn-circle btn-xl" id="btn2" v-on:click="displayBlock('2')">
-                    Optimer
-                    <br> Flow Design
-                </button>
-                <button type="button" class="btn btn-info btn-circle btn-xl" id="btn3" v-on:click="displayBlock('3')">
-                    Monitorer
-                    <br> Flow Perform
-                </button>
-            </div>
-            <div class="col-lg-7">
-                <div id="flowrobot" class="robotdiv" v-show="showFlowRobot">
-                    <h2>Flow Robot</h2>
-                    <p>
-                        content of flow robot <a href="#" class="readme">［Read me］</a>
-                    </p>
-                </div>
-                <div id="flowdesign" class="designdiv" v-show="showFlowDesign">
-                    <h2>Flow Design</h2>
-                    <p>
-                        content of flow design <a href="#" class="readme">［Read me］</a>
-                    </p>
-                </div>
-                <div id="flowperform" class="performdiv" v-show="showFlowPerform">
-                    <h2>Flow Perform</h2>
-                    <p>
-                        content of flow perform <a href="#" class="readme">［Read me］</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+        </p>  
     </div>
     <div id="contactcontent" class="container contentContact" style="margin-top:20px;">
-        <h2>Hvad er vigtigt for, at Jeres virksomhed kan skabe værdi?</h2>
+        <h2>Be better than the rest</h2>
         <p>
             content of contact <a href="#" class="readme">［Read me］</a>
         </p>
@@ -328,13 +292,57 @@
         </div>
     </div>
 
+
+    <div class="container contentWork" id="app">
+        <!-- <h2>Work</h2> -->
+        <div class="row">
+            <h2>Inovative business model</h2>
+            <div class="col-lg-5">
+                <img src="image/cyklus_flowint.com_.png" class="recyclelogo">
+                <button type="button" class="btn btn-info btn-circle btn-xl" id="btn1" v-on:click="displayBlock('1')">
+                    Udførdaglige
+                    <br> opgaver
+                    <br> Flow Robot
+                </button>
+                <button type="button" class="btn btn-info btn-circle btn-xl" id="btn2" v-on:click="displayBlock('2')">
+                    Optimer
+                    <br> Flow Design
+                </button>
+                <button type="button" class="btn btn-info btn-circle btn-xl" id="btn3" v-on:click="displayBlock('3')">
+                    Monitorer
+                    <br> Flow Perform
+                </button>
+            </div>
+            <div class="col-lg-7">
+                <div id="flowrobot" class="robotdiv" v-show="showFlowRobot">
+                    <h2>Flow Robot</h2>
+                    <p>
+                        content of flow robot <a href="#" class="readme">［Read me］</a>
+                    </p>
+                </div>
+                <div id="flowdesign" class="designdiv" v-show="showFlowDesign">
+                    <h2>Flow Design</h2>
+                    <p>
+                        content of flow design <a href="#" class="readme">［Read me］</a>
+                    </p>
+                </div>
+                <div id="flowperform" class="performdiv" v-show="showFlowPerform">
+                    <h2>Flow Perform</h2>
+                    <p>
+                        content of flow perform <a href="#" class="readme">［Read me］</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!--  <div class="buttonbar col-lg-5" >
       <button><a href="#" class="button Processer">Processer</a></button></br>
       <button><a href="#" class="button Processer">Processer</a></button></br>
       <button><a href="#" class="button Processer">Processer</a></button>
       
-    </div>    
-    </div>  -->
+    </div>    -->
+    
     <!--     <script src="javascript/javascript.js">
      var box=document.getElementByID("app")
       var flowrobot=document.getElementByID("flowrobot")
