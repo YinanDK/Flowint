@@ -99,13 +99,57 @@
     }
         
     .box1{
-        border: 2px solid black;
+        border: 2px solid #fff;
+        background-color: rgba(0,0,0,0.6);
+        border-radius: 30px;
         width: 75%;
         position: relative;
         top:75px;
         margin: 40px auto;
         padding: 10px 10px 0 10px;
         }
+        
+    .article-container{
+        border: 2px solid #fff;
+        background-color: rgba(0,0,0,0.6);
+        border-radius: 30px;
+        width: 100%;
+        position: absolute;
+        top:150px;
+        margin: 10px auto;
+        padding: 10px 10px 0 10px;
+        }
+        
+    .article{
+        color: #fff;
+        }
+        
+    .article h3{
+        text-align: center;    
+        }
+        
+    .front-article{
+        display: block;
+        text-align: center;
+        padding: 30px;
+        }
+        
+    .article1{
+        display: none;    
+        }
+
+    .article2{
+        display: none;    
+        }
+
+    .article3{
+        display: none;    
+        }
+
+    .article4{
+        display: none;    
+        }
+
         
     .process-nav-bar{
         display: flex;
@@ -116,7 +160,28 @@
     .icon{
         flex: 2;
         margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
         }
+        
+    #kontakt{
+        background: #ff9000;
+        padding: 9px 44px;
+        font-size: 18px;
+        font-weight: 600;
+        height: 44px;
+        margin: 10px auto;
+        border: none;
+        box-shadow: none;
+        border-radius: 22px;
+        letter-spacing: -0.01em;
+        color: #fff ;
+        text-align: center;
+        -webkit-transition: background 200ms ease-in;
+        -moz-transition: background 200ms ease-in;
+        transition: background 200ms ease-in;
+    }
 </style>
 
 </head>
@@ -140,24 +205,64 @@
 
 <div class="box1">
 	<div class="process-nav-bar">
-		<div class="icon icon1">
-        <i class="fa fa-code-fork" style="font-size:48px;color:white"></i>
-        <p>first thing</p>
+		<div class="icon icon1" onclick="changePage()">
+        <i class="fa fa-cogs" style="font-size:48px;color:white"></i>
+        <p>Vores processer<br/> er vigtige</p>
         </div>
         <div class="icon icon2">
-        <i class="fa fa-code-fork" style="font-size:48px;color:white"></i>
-        <p>first thing</p>
+        <i class="fa fa-exchange" style="font-size:48px;color:white"></i>
+        <p>Gennemsigtighed<br/> er vigtig</p>
         </div>
         <div class="icon icon3">
-        <i class="fa fa-code-fork" style="font-size:48px;color:white"></i>
-        <p>first thing</p>
+        <i class="fa fa-steam-square" style="font-size:48px;color:white"></i>
+        <p>Kvalitetsstyring af digitale processer er vigtige</p>
         </div>
         <div class="icon icon4">
-        <i class="fa fa-code-fork" style="font-size:48px;color:white"></i>
-        <p>first thing</p>
+        <i class="fa fa-american-sign-language-interpreting" style="font-size:48px;color:white"></i>
+        <p>End-to-end optimering og automatisering er vigtige</p>
+        </div>
+        
+    <div class="article-container">
+        <div class="article front-article">
+        <h1>SKAB VÆRDI GENNEM PROCESSER</h1>
+        <h3>FLOWINT styrker PROCESSER</h3>
+        <p>Kan du sætte hak ved et eller flere af disse punkter, når du stiller dig selv følgende spørgsmål:
+Hvad er vigtigt for, at Jeres virksomhed kan skabe værdi?</p>
+        <img src="image/process_flowint.dk_.png">
+        <p>Kontakt os for uforpligtende dialog om hvordan FLOWINT kan understøtte Jeres forretning</p>
+        <a href="contact.html">
+                <button id="kontakt"> Kontakt </button>
+            </a>
+        </div>
+        <div class="article article1">
+        <h3>Vores processer er vigtige</h3>
+        <p>Vi er opmærksomme på, at vores processer udgør den måde, vi skaber værdi for vores kunder på. Det er derfor afgørende for vores konkurrenceevne, at digitale forretningsprocesser understøtter kerneydelser og services til vores kunder. Vi ønsker at optimere og udvikle innovative processer med henblik på stadig forbedring af kundeværdi.</p>
+        </div>
+        <div class="article article2">
+        <h3>Gennemsigtighed er vigtig</h3>
+        <p>Optimering af virksomhedens værdikæde er vanskelig, når processer udføres via mange funktioner og features i forskellige IT-systemer, der opleves som uigennemsigtige black-boxe. Kompleksiteten i vores samlede IT-setup hæmmer innovativ forretningsudvikling. Vi ønsker en integreret digital platform, der med gennemsigtighed giver overblik og indsigt i processer og performance.</p>
+        </div>
+        <div class="article article3">
+        <h3>Kvalitetsstyring af digitale processer er vigtige</h3>
+        <p>Vi konstaterer, at brugen af IT-systemer varierer mellem medarbejdere afhængig af kompetencer og individuel praksis – f.eks. udmøntet i uhensigtsmæssige workarounds, alternative apps, regneark mv. Vi ønsker ensartet høj kvalitet i eksekvering af digitale processer – uden at medarbejdere behøver at referere til flowcharts eller anden dokumentation.</p>
+        </div>
+        <div class="article article4">
+        <h3>End-to-end optimering og automatisering er vigtige</h3>
+        <p>For at kunne levere effektive ydelser og services af høj kvalitet til vores kunder, ønsker vi at integrere og optimere værdiskabelse gennem hele værdikæden end-to-end. Vi ønsker at kunne løfte niveauet for integration af tværgående processer – uden at skulle trækkes med ressourcekrævende IT-projekter.</p>
+        </div>
         </div>
         
 	</div>
 </div>
-</body>
+
+    
+    <script>
+    function changePage(){
+          document.getElementsByClassName('front-article').style.display= 'none';
+          document.getElementsByClassName('article1').style.display = 'block';  
+        }
+    
+    
+    </script>
+    </body>
 </html>
