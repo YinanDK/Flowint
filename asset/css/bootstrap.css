@@ -320,7 +320,7 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  /*color: #428bca;*/
   text-decoration: none;
 }
 
@@ -399,7 +399,7 @@ h6,
 .h6 {
   /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-weight: 200;
-  line-height: 1.1;
+  /*line-height: 1.1;*/
   color: inherit;
 }
 
@@ -432,12 +432,12 @@ h6 .small,
   color: #999999;
 }
 
-h1,
+/*h1,
 h2,
 h3 {
   margin-top: 20px;
   margin-bottom: 10px;
-}
+}*/
 
 h1 small,
 h2 small,
@@ -900,8 +900,8 @@ pre code {
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+ /* padding-right: 15px;
+  padding-left: 15px;*/
 }
 
 .col-xs-1,

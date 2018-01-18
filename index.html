@@ -6,6 +6,7 @@
     <!-- <link rel="stylesheet" href="stylesheet/styles.css" /> -->
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link href="asset/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/font-awesome.css">
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" lang="da" />
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
@@ -20,6 +21,7 @@
         font-family: "Open Sans", Helvetica, Arial, sans-serif;
         font-size: 18px;
         line-height: 1.428571429;
+        background-color: #f3f3f3;
     }
 
     .navigation {
@@ -33,7 +35,7 @@
         width: 100%;
         z-index: 1;
         line-height: 61px;
-        padding: 0 2%;
+        padding: 20px 25px;
         position: fixed;
         top: 0;
     }
@@ -76,44 +78,146 @@
         text-decoration: underline;
     }
 
-    .video-container {
-        z-index: -100;
-        width: 100%;
-        height: 75%;
-        overflow: hidden;
-        /*position: absolute;*/
-        /*top: -300;*/
-        left: 0;
-        /* margin-right: 0px;
-        margin-top: 61px;*/
-    }
-
-    #myvideo {
-        width: 100%;
-    }
-
     h2 {
         text-align: center;
         font-size: 40px;
+        clear: both;
+    }
+
+    .mainHead {
+        padding-top: 40px;
+    }
+
+    h3 {
+        padding-top: 60px;
+    }
+
+    .contentAboutme,
+    .contentSmallFour {
+        width: 100%;
+        background-color: #f3f3f3;
+        position: relative;
+        /* border-bottom-style: solid;*/
     }
 
     .contentAboutme {
-        padding: 40px 30px;
+        padding-left: 2%;
+        min-width: 960px;
     }
 
-    .contentoptimize {
-        height: 300px;
-        width: 49%;
+    .arrow {
+
     }
-    .headOptimizer{
-        padding: 200px 30px;
+
+    .arrow{
+        position: absolute;
+        left: 44%;
+        margin-top: -25px;
+        margin-left: -25px;
+        height: 50px;
+        width: 200px;
+        text-align: center;
+        font-size: 18px;
+        color: #646464;
+        cursor: pointer;
+        /*background:red;*/
+   
+    }
+    .arrow1,.arrow2{
+        bottom: 0px;
+         -webkit-animation: bounce 1s infinite;
+        -moz-animation: bounce 1s infinite;
+        -o-animation: bounce 1s infinite;
+        animation: bounce 1s infinite;
+        }
+
+    .downArrow {
+        color: #646464;
+    }
+
+
+    @-webkit-keyframes bounce{
+        0% {
+            bottom: 0px;
+        }
+        50% {
+            bottom: 15px;
+        }
+        100% {
+            bottom: 30;
+        }
+    }
+
+    @-moz-keyframes bounce {
+        0% {
+            bottom: 0px;
+        }
+        50% {
+            bottom: 15px;
+        }
+        100% {
+            bottom: 30;
+        }
+    }
+
+    @-o-keyframes bounce {
+        0% {
+            bottom: 0px;
+        }
+        50% {
+            bottom: 15px;
+        }
+        100% {
+            bottom: 30;
+        }
+    }
+
+    @keyframes bounce {
+        0% {
+            bottom: 0px;
+        }
+        50% {
+            bottom: 15px;
+        }
+        100% {
+            bottom: 30;
+        }
+    }
+
+    .contentOptimize,
+    .contentContact {
+        height: 350px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .contentOptimize{
+
+    }
+
+    .linkOptimizer {
+        color: #fff;
+    }
+
+    .line {
+        /*height: 10vh;*/
+        border-top-style: solid;
+        border-width: 1px;
+        border-color: #fff;
+        padding-bottom: 20px;
+    }
+
+    .contentImage {
+        text-align: center;
+    }
+
+    .grid-image {
+        width: 250px;
+        height: 250px;
+        padding-top: 50px;
     }
 
     .Processer {
         background-color: #FDC437;
-    }
-    .processer hover:{
-        background-color: #000;
     }
 
     .Samarbejder {
@@ -127,97 +231,76 @@
     .Co-opreation {
         background-color: #1994FC;
     }
+    #email,
+    #name{
+    padding: 6px 12px;
+    text-align: left;
+    border: none;
+    font-size: 18px;
+    line-height: 22px;
+    box-shadow: none;
+    background: #fff;
+    height: 44px;
+    border-radius: 0 !important;
+    }
+    .contentContact{
+        text-align: center;
+    }
+    #questionaires{
+     background: #ff9000;
+    padding: 9px 44px;
+    font-size: 18px;
+    font-weight: 600;
+    height: 44px;
+    margin: 0 auto;
+    border: none;
+    box-shadow: none;
+    border-radius: 22px;
+    letter-spacing: -0.01em;
+    color: #fff ;
+    text-align: center;
+    -webkit-transition: background 200ms ease-in;
+    -moz-transition: background 200ms ease-in;
+    transition: background 200ms ease-in;
+    }
+    .contentFooter{
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding:50px 15px;
+    background-color: #000;
+    color: #fff;
+    opacity: 40%   
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 400;
+     }
+    .contentFooter a{
+        color: #fff;
+    }
 
-   /* .Processer,
+    .footerHead{
+       color:#2CF3D4;   
+    }
+
+    /* .Processer,
     .Samarbejder,
     .Agility,
     .Co-opreation: hover {
         background-color: #000;
     }*/
-    /*.contentContact{
+    /*.contentSmallFour{
        padding-left: 30px;
     }*/
-
-    .recyclelogo {
-        width: 333px;
-        height: auto;
-    }
-
-    .btn-circle {
-        width: 150px;
-        height: 150px;
-        padding: 10px 16px;
-        font-size: 20px;
-        line-height: 1.33;
-        border-radius: 75px;
-    }
-
-    #btn1,
-    #btn2,
-    #btn3 {
-        /*        z-index: 0;*/
-        position: absolute;
-        color: #000;
-    }
-
-    #btn1 {
-        top: 1px;
-        left: 105px;
-        background-color: #04B1C5;
-    }
-
-    #btn2 {
-        top: 150px;
-        left: 20px;
-        background-color: #D7191B;
-    }
-
-    #btn3 {
-        top: 150px;
-        left: 192px;
-        background-color: #B9B901;
-    }
-
-    .button {
-        position: relative;
-        margin: 0;
-        padding-left: 14px;
-        padding-right: 14px;
-        padding-top: 2.8px;
-        padding-bottom: 2.8px;
-        color: white;
-        font-size: 14px;
-        text-align: center;
-        line-height: 1.5;
-    }
-
-    .buttonbar a {
-        background-color: #f2f2f2;
-    }
     /*.button:hover { background:#fff; }*/
-
-    .button::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        width: 0;
-        height: 0;
-    }
-
-
-    .processer::after {
-        border-style: solid;
-        right: -22px;
-        border-width: 22px/2;
-        border-color: #f2f2f2 b/*order-color: #B9B901;*/
-    }
-    /*.robotdiv{
+    /*.robotDiv{
   display: none;
 }
-.designdiv{
+.designDiv{
   display: none;
 }*/
-    /*.performdiv{
+    /*.performDiv{
   display: none;
 }*/
     </style>
@@ -231,8 +314,8 @@
                 <a href="index.html" class="navbarlogo">FlowINT</a>
                 <div class="navbar-right">
                     <ul>
-                        <a href="#aboutme" class="navbarlink">About me</a>
-                        <a href="#contactcontent" class="navbarlink">Work</a>
+                        <a href="#aboutme" class="navbarlink">what is FlowINT</a>
+                        <a href="#content-fourgrid" class="navbarlink">solutions</a>
                         <a href="contact.html" class="navbarlink">Contact</a>
                     </ul>
                 </div>
@@ -240,60 +323,177 @@
         </div>
     </header>
     <!--  FIRST DIV -->
-    <div id="aboutme" class="contentAboutme">
-        <h2>Grow your business with Flowint</h2>
-        <p>
+    <div id="aboutme" class="container contentAboutme">
+        <h2 class="mainHead">Grow your business with Flowint</h2>
+            <p>FLOWINT is primarily a platform for continuous agile optimization of digital processes across departments, functions and responsibilities.</p>
+        <div class="row">
+            <div class="col-sm-6 content-animation">
+                <canvas id="canvas" class="canvasAboutMe" width="600" height="600" style="display: inline-block;">
+                </canvas>
+            </div>
+            <div class="col-sm-6 ">
+                <div id="test-div" style="display: none; ">
+                </div>
+                <div id="content-flowrobot" class="robotDiv contentConsistentCircle" style="display: none; width: 100%;">
+                    <h3>Flow Robot</h3>
+                    <p>
+                        content of flow robot <a href="#" class="readMe">［Read me］</a>
+                    </p>
+                </div>
+                <div id="content-flowdesign" class="designDiv contentConsistentCircle" style="display: none; width: 100%;">
+                    <h3>Flow Design</h3>
+                    <p>
+                        content of flow design <a href="#" class="readMe contentConsistentCircle">［Read me］</a>
+                    </p>
+                </div>
+                <div id="content-flowperform" class="performDiv" style="display: none; width: 100%;">
+                    <h3>Flow Perform</h3>
+                    <p>
+                        content of flow perform <a href="#" class="readMe contentConsistentCircle">［Read me］</a>
+                    </p>
+                </div>
+            </div>
+            <!-- <p>
             <div class="video-container">
                 <video autoplay loop muted id="myvideo">
                     <source src="video/background.mp4" type="video/mp4">
                 </video>
             </div>
-            content of about me <a href="#" class="readme">［Read me］</a>
-        </p>
+            <!-content of about me <a href="#" class="readMe">［Read me］</a> -->
+            <!--  </p> -->
+        </div>
+        <div class="arrow arrow1 ">
+            keep going
+            <br>
+            <a href="#content-fourgrid" class="downArrow fa fa-chevron-down"></a>
+        </div>
     </div>
-    <div id="contactcontent" class="container contentContact" style="margin-top:20px;">
-        <h2>Be better than the rest</h2>
+    <div id="content-fourgrid" class=" contentSmallFour">
+        <h2 class="betterHead">Be better than the rest</h2>
         <div class="row">
-            <div class="col-lg-6 contentoptimize Processer">
-                <h3 class="headOptimizer">
-                    <a href="processer.html">Processer</a>
-                </h3>
-              <!--   <p>
-                content of processer <a href="#" class="readme">［Read me］</a>
+            <div class="col-sm-6 contentOptimize Processer">
+                <div class="contentImage">
+                    <img src="image/process_flowint.dk_.png" class="grid-image">
+                </div>
+                <h4 class="headOptimizer">
+                    <a class="linkOptimizer" href="processer.html">Processer</a>
+                </h4>
+                <div class="line">
+                    <p>
+                        content of processer
+                    </p>
+                </div>
+                <!--   <p>
+                content of processer <a href="#" class="readMe">［Read me］</a>
                </p> -->
             </div>
-            <div class="col-lg-6 contentoptimize Samarbejder">
-                <h3 class="headOptimizer">
-                    <a href="#">Samarbejder</a>
-                </h3>
-              <!--   <p>
-                    content of Samarbejder <a href="#" class="readme">［Read me］</a>
+            <div class="col-sm-6 contentOptimize Samarbejder">
+                <div class="contentImage">
+                    <img class="grid-image" src="image/samarbejde2_flowint.dk_.png">
+                </div>
+                <h4 class="headOptimizer">
+                    <a class="linkOptimizer" href="#">Samarbejder</a>
+                </h4>
+                <div class="line">
+                    <p>
+                        content of samarbejder
+                    </p>
+                </div>
+                <!--   <p>
+                    content of Samarbejder <a href="#" class="readMe">［Read me］</a>
                 </p> -->
             </div>
-            <div class="col-lg-6 contentoptimize Agility">
-                <h3 class="headOptimizer">
-                    <a href="#">Agility</a>
-                </h3>
-<!--                 <p>
-                    content of Agility <a href="#" class="readme">［Read me］</a>
+            <div class="col-sm-6 contentOptimize Agility">
+                <div class="contentImage">
+                    <img src="image/aprocess_flowint.dk_.png" class="grid-image">
+                </div>
+                <h4 class="headOptimizer">
+                    <a class="linkOptimizer" href="#">Agility</a>
+                </h4>
+                <div class="line">
+                    <p>
+                        content of agility
+                    </p>
+                </div>
+                <!--                 <p>
+                    content of Agility <a href="#" class="readMe">［Read me］</a>
                 </p> -->
             </div>
-            <div class="col-lg-6 contentoptimize Co-opreation">
-                <h3 class="headOptimizer">
-                    <a href="">Co-opreation</a>
-                </h3>
+            <div class="col-sm-6 contentOptimize Co-opreation">
+                <div class="contentImage">
+                    <img src="image/relationer2_flowint.dk_.png" class="grid-image">
+                </div>
+                <h4 class="headOptimizer">
+                    <a class="linkOptimizer" href="">Co-opreation</a>
+                </h4>
+                <div class="line">
+                    <p>
+                        content of Co-opreation
+                    </p>
+                </div>
                 <!-- <p>
-                    content of Co-operation <a href="#" class="readme">［Read me］</a>
+                    content of Co-operation <a href="#" class="readMe">［Read me］</a>
                 </p> -->
             </div>
         </div>
+        <div class="arrow arrow2">
+            Learn more <br>
+           <a href="#" class=" downArrow fa fa-chevron-down" ></a> 
+        </div> 
     </div>
-    <div class="container contentWork" id="app">
-        <!-- <h2>Work</h2> -->
-        <div class="row">
+    <div class="contentContact">
+        <h2>Hvad er vigtigt for, at Jeres virksomhed kan skabe værdi?</h2>
+        <h3>let's develop FLOWINT in cooperation with you!</h3>
+
+        <div class="companyInformation">
+            <input id="email" type="text" placeholder="Enter work Email"> 
+            <input id="name" type="text" placeholder="Company Name"> 
+            <a href="contact.html">
+                <button id="questionaires"> Questionaire </button>
+            </a>
+        </div>
+
+    </div>
+
+    <div id="footer" class="contentFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 footerColume">
+                    <h4 class="footerHead">COMPANY</h4>
+                    <p>
+                        
+                     <a href="index.html">About</a> 
+                    </p>
+                </div><!-- /col-lg-4 -->
+                
+                <div class="col-sm-4 footerColume">
+                    <h4 class="footerHead">USEFULL LINKS</h4>
+                    <p>
+                        <a href="#">Link</a><br>
+                    </p>
+                </div><!-- /col-lg-4 -->
+                
+                <div class=" col-sm-4 footerColume">
+                <h4 class="footerHead">CONTACT</h4>
+                <p><i class="fa fa-home mr-3"></i>
+                    Flakholmen 10 st th, 2720 Vanløse, Denmark. 
+                </p>
+                <p><i class="fa fa-envelope mr-3"></i> info@example.com</p>
+                <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+            
+            </div>
+        
+        </div>
+    </div>
+  
+    <!--  <div class="container contentWork" id="app">
+        <!- <h2>Work</h2> -->
+    <!--  <div class="row">
             <h2>Inovative business model</h2>
-            <div class="col-lg-5">
-                <button type="button" class="btn btn-info btn-circle btn-xl" id="btn1" v-on:click="displayBlock('1')">
+            <div class="col-lg-5">  -->
+    <!-- <button type="button" class="btn btn-info btn-circle btn-xl" id="btn1" v-on:click="displayBlock('1')">
                     Udførdaglige
                     <br> opgaver
                     <br> Flow Robot
@@ -305,38 +505,34 @@
                 <button type="button" class="btn btn-info btn-circle btn-xl" id="btn3" v-on:click="displayBlock('3')">
                     Monitorer
                     <br> Flow Perform
-                </button>
-            </div>
-            <div class="col-lg-7">
-                <div id="flowrobot" class="robotdiv" v-show="showFlowRobot">
+                </button> -->
+    <!-- </div> -->
+    <!-- <div class="col-lg-7">
+                <div id="flowrobot" class="robotDiv" v-show="showFlowRobot">
                     <h2>Flow Robot</h2>
                     <p>
-                        content of flow robot <a href="#" class="readme">［Read me］</a>
+                        content of flow robot <a href="#" class="readMe">［Read me］</a>
                     </p>
                 </div>
-                <div id="flowdesign" class="designdiv" v-show="showFlowDesign">
+                <div id="flowdesign" class="designDiv" v-show="showFlowDesign">
                     <h2>Flow Design</h2>
                     <p>
-                        content of flow design <a href="#" class="readme">［Read me］</a>
+                        content of flow design <a href="#" class="readMe">［Read me］</a>
                     </p>
                 </div>
-                <div id="flowperform" class="performdiv" v-show="showFlowPerform">
+                <div id="flowperform" class="performDiv" v-show="showFlowPerform">
                     <h2>Flow Perform</h2>
                     <p>
-                        content of flow perform <a href="#" class="readme">［Read me］</a>
+                        content of flow perform <a href="#" class="readMe">［Read me］</a>
                     </p>
                 </div>
             </div>
         </div>
-    </div>
-<<<<<<< HEAD
-    
+    </div> -->
+    <!--  
     <div class="svgLogo">
     <img src="image/circle.svg" alt="logo" width="500px">
-    </div>
-    
-=======
->>>>>>> be8c34d5f0eca8cd599d6c8d136712ea3bbb6db4
+    </div> -->
     <!--  <div class="buttonbar col-lg-5" >
       <button><a href="#" class="button Processer">Processer</a></button></br>
       <button><a href="#" class="button Processer">Processer</a></button></br>
@@ -362,28 +558,169 @@
 
     </script> -->
     <script>
-    new Vue({
-        el: '#app',
-        data: {
-            showFlowRobot: true,
-            showFlowDesign: false,
-            showFlowPerform: false,
-        },
-        methods: {
-            displayBlock: function(id) {
-                this.showFlowRobot = false;
-                this.showFlowDesign = false;
-                this.showFlowPerform = false;
-                if (id == '1')
-                    this.showFlowRobot = true;
-                else if (id == '2')
-                    this.showFlowDesign = true;
-                else if (id == '3')
-                    this.showFlowPerform = true;
-            }
+    // new Vue({
+    //     el: '#app',
+    //     data: {
+    //         showFlowRobot: true,
+    //         showFlowDesign: false,
+    //         showFlowPerform: false,
+    //     },
+    //     methods: {
+    //         displayBlock: function(id) {
+    //             this.showFlowRobot = false;
+    //             this.showFlowDesign = false;
+    //             this.showFlowPerform = false;
+    //             if (id == '1')
+    //                 this.showFlowRobot = true;
+    //             else if (id == '2')
+    //                 this.showFlowDesign = true;
+    //             else if (id == '3')
+    //                 this.showFlowPerform = true;
+    //         }
 
+    //     }
+    // })
+    var radius = 200;
+    var canvasLength = 500;
+    var imageLength = 100;
+    var central = new Image();
+
+    // var moon = new Image();
+    var arrow = new Image();
+    // var arrow2 = new Image();
+    var image1 = new Image();
+    var image2 = new Image();
+    var image3 = new Image();
+    var image1pos = {}; // define a dictionary
+    var image2pos = {};
+    var image3pos = {};
+    image1pos["X"] = Math.sqrt(3) / 2 * radius - imageLength / 2; //according to the center of the image
+    image1pos["Y"] = radius / 2 - imageLength / 2;
+    image2pos["X"] = Math.sqrt(3) / 2 * radius * (-1) - imageLength / 2;
+    image2pos["Y"] = radius / 2 - imageLength / 2;
+    image3pos["X"] = -imageLength / 2;
+    image3pos["Y"] = -radius - imageLength / 2;
+
+    function init() { //initial
+        central.src = 'image/LogoRobot_flowint.dk_.gif';
+        // moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';                  //load sources
+        arrow.src = 'http://www.clker.com/cliparts/v/L/R/K/N/Z/down-arrow-filled-hi.png';
+        /* arrow2.src = 'https://mdn.mozillademos.org/files/1429/Canvas_arrow.png';*/
+
+        var ctx = document.getElementById('canvas').getContext('2d'); //get canvas is
+
+        image1.src = "image/flowrobot.png";
+        image2.src = "image/flowrobot2.png";
+        image3.src = "image/flowperform.png";
+        // image1.id = "image1";
+        document.getElementById('canvas').addEventListener("mousedown", function(e) { //create event
+            var canvasX = document.getElementById('canvas').getBoundingClientRect().left; //the distance from x to the left-top corner
+            var canvasY = document.getElementById('canvas').getBoundingClientRect().top;
+            var x;
+            var y;
+            if (e.clientX != undefined && e.clientY != undefined) {
+                x = e.clientX;
+                y = e.clientY;
+            } else
+                alert("not able to load clientX and cliendy");
+            // alert("x:" + x+"   Y:" + y );
+            // alert("canvas x:" + canvasX+"   Y:" + canvasY );
+            // alert("rel X:"+(x-canvasX)+"  Y:"+(y-canvasY));
+            alert(imageClickedNum(x - (canvasX + canvasLength / 2), y - canvasY - canvasLength / 2));
+        }, false);
+
+        window.requestAnimationFrame(draw);
+    }
+
+    function draw() {
+        var ctx = document.getElementById('canvas').getContext('2d');
+
+        // ctx.globalCompositeOperation = 'destination-over';
+        ctx.clearRect(0, 0, canvasLength, canvasLength); // clear canvas
+
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+        ctx.strokeStyle = 'rgba(f, f, f, 0.4)';
+        ctx.save();
+        ctx.translate(canvasLength / 2, canvasLength / 2);
+
+        ctx.beginPath();
+        ctx.arc(canvasLength / 2 - canvasLength / 2, canvasLength / 2 - canvasLength / 2, radius, 0, Math.PI * 2, false); // arrow orbit
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = "#fff";
+        ctx.stroke();
+
+        ctx.drawImage(image1, image1pos["X"], image1pos["Y"], imageLength, imageLength);
+        ctx.drawImage(image2, image2pos["X"], image2pos["Y"], imageLength, imageLength);
+        ctx.drawImage(image3, image3pos["X"], image3pos["Y"], imageLength, imageLength);
+
+
+        var time = new Date();
+        var angle = 2 * (((2 * Math.PI) / 60) * time.getSeconds() + ((2 * Math.PI) / 60000) * time.getMilliseconds());
+        ctx.rotate(angle);
+        ctx.translate(radius, 0);
+        // ctx.fillRect(0, -12, 50, 24); // Shadow
+        ctx.drawImage(arrow, -15, -15, 30, 30);
+        // var angleDegree = angle*180/Math.PI;
+        if (imageClickedNum(radius * Math.cos(angle), radius * Math.sin(angle)) == 1) {
+            document.getElementById("content-flowrobot").style.display = 'inline-block';
+            document.getElementById("content-flowdesign").style.display = 'none';
+            document.getElementById("content-flowperform").style.display = 'none';
+            // document.getElementById("test-div").style.display = 'none';
+        } else if (imageClickedNum(radius * Math.cos(angle), radius * Math.sin(angle)) == 2) {
+            document.getElementById("content-flowdesign").style.display = 'inline-block';
+            document.getElementById("content-flowrobot").style.display = 'none';
+            document.getElementById("content-flowperform").style.display = 'none';
+            // document.getElementById("test-div").style.display = 'none';
+        } else if (imageClickedNum(radius * Math.cos(angle), radius * Math.sin(angle)) == 3) {
+            document.getElementById("content-flowperform").style.display = 'inline-block';
+            document.getElementById("content-flowdesign").style.display = 'none';
+            document.getElementById("content-flowrobot").style.display = 'none';
+            // document.getElementById("test-div").style.display = 'none';
         }
-    })
+        // else {
+        //     document.getElementById("test-div").style.display = 'inline-block';
+        //     document.getElementById("content-flowrobot").style.display = 'none';
+        //     document.getElementById("content-flowdesign").style.display = 'none';
+        //     document.getElementById("content-flowperform").style.display = 'none';
+        //  }
+        // if (ima geClickedNum(200 * Math.cos(angle), 200 * Math.sin(angle)) !=0){
+        //      document.getElementById("test-div").style.display = 'inline-block';}
+        // 
+
+        // //   var time = new Date();
+        // // ctx.rotate(((2 * Math.PI) / 60) * time.getSeconds() + ((2 * Math.PI) / 60000) * time.getMilliseconds());
+        // ctx.translate(Math.sqrt(3)*200*(-1)+20, Math.sqrt(3)*200/2-20);
+        // ctx.fillRect(0, -12, 50, 24); // Shadow
+        // ctx.drawImage(arrow2, -12, -12);
+
+        // Moon
+        // ctx.save();
+        // ctx.rotate(((2 * Math.PI) / 6) * time.getSeconds() + ((2 * Math.PI) / 6000) * time.getMilliseconds());
+        // ctx.translate(0, 28.5);
+        // ctx.drawImage(moon, -3.5, -3.5);
+        // ctx.restore();
+
+        ctx.restore();
+
+
+
+        ctx.drawImage(central, (canvasLength / 2 - imageLength / 2), (canvasLength / 2 - imageLength / 2), imageLength, imageLength);
+
+        window.requestAnimationFrame(draw);
+    }
+
+    init();
+
+    function imageClickedNum(x, y) {
+        if ((x - image1pos["X"]) > -30 && (x - image1pos["X"]) < (imageLength + 30) && (y - image1pos["Y"]) > -30 && (y - image1pos["Y"]) < (imageLength + 30))
+            return 1;
+        else if ((x - image2pos["X"]) > -30 && (x - image2pos["X"]) < (imageLength + 30) && (y - image2pos["Y"]) > -30 && (y - image2pos["Y"]) < (imageLength + 30))
+            return 2;
+        else if ((x - image3pos["X"]) > -30 && (x - image3pos["X"]) < (imageLength + 30) && (y - image3pos["Y"]) > -30 && (y - image3pos["Y"]) < (imageLength + 30))
+            return 3;
+        else
+            return 0;
+    }
     </script>
 </body>
 
