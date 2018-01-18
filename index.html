@@ -25,9 +25,9 @@
     }
 
     .navigation {
-        /*      padding-top: 30px;
-      padding-bottom: 30px;*/
-        background-color: #000;
+        /*      padding-top: 30px; */
+      padding-bottom: 30px;
+        background-color: #1994FC;
         box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.15);
         font-size: 14px;
         font-weight: 600;
@@ -58,11 +58,11 @@
         padding: 10px;
         font-family: Arial;
         font-weight: 900;
-        color: #fff !important;
+        color: #fff;
     }
 
     .navbarlink:hover {
-        text-decoration: underline;
+        color: #000;
     }
 
     .navbarlogo {
@@ -269,7 +269,7 @@
     width: 100%;
     min-height: 1px;
     padding:50px 15px;
-    background-color: #000;
+    background-color: #1994FC;
     color: #fff;
     opacity: 40%   
     font-size: 14px;
@@ -581,8 +581,8 @@
     //     }
     // })
     var radius = 200;
-    var canvasLength = 500;
-    var imageLength = 100;
+    var canvasLength = 600;
+    var imageLength = 200;
     var central = new Image();
 
     // var moon = new Image();
@@ -609,9 +609,9 @@
 
         var ctx = document.getElementById('canvas').getContext('2d'); //get canvas is
 
-        image1.src = "image/flowrobot.png";
-        image2.src = "image/flowrobot2.png";
-        image3.src = "image/flowperform.png";
+        image1.src = "image/flowrobot.svg";
+        image2.src = "image/flowrobot2.svg";
+        image3.src = "image/flowperform.svg";
         // image1.id = "image1";
         document.getElementById('canvas').addEventListener("mousedown", function(e) { //create event
             var canvasX = document.getElementById('canvas').getBoundingClientRect().left; //the distance from x to the left-top corner
