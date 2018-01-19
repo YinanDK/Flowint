@@ -128,13 +128,13 @@
         text-align: center;    
         }
         
-    .front-article{
+    /*.front-article{
         display: block;
         text-align: center;
         padding: 30px;
-        }
+        }*/
         
-    .article1{
+   /* .article1{
         display: none;    
         }
 
@@ -148,7 +148,7 @@
 
     .article4{
         display: none;    
-        }
+        }*/
 
         
     .process-nav-bar{
@@ -263,27 +263,27 @@ Hvad er vigtigt for, at Jeres virksomhed kan skabe værdi?</p>
 new Vue({
     el:'#divFirst',
     data:{
-        showmainPage:true,
-        showfirstIcon:false,
-        showsecondIcon:false,
-        showthirdIcon:false,
-        showforthContent:false,
+        mainPage:true,
+        firstIcon:false,
+        secondIcon:false,
+        thirdIcon:false,
+        forthContent:false,
     },
     methods:{
        displayBlock:function(id){
-           this.showmainPage=false;
-            this.showfirstIcon=false;
-            this.showsecondIcon=false;
-            this.showthirdIcon=false;
-            this.showforthContent=false;          
+           this.mainPage=false;
+            this.firstIcon=false;
+            this.secondIcon=false;
+            this.thirdIcon=false;
+            this.forthContent=false;          
            if(id=='1')
-               this.showfirstIcon=true;
+               this.firstIcon=true;
            if(id=='2')
-               this.showsecondIcon=true;
+               this.secondIcon=true;
            if(id=='3')
-               this.showthirdIcon=true;
+               this.thirdIcon=true;
            if(id=='4')
-               this.showforthContent=true;
+               this.forthContent=true;
                
        } 
     }
