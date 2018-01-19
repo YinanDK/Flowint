@@ -203,27 +203,30 @@
     </header>
 
 
-<div class="box1">
+<div id="divFirst" class="box1">
 	<div class="process-nav-bar">
-		<div class="icon icon1" onclick="changePage()">
-        <i class="fa fa-cogs" style="font-size:48px;color:white"></i>
+		<div class="icon icon1">
+        <button class="fa fa-cogs" style="font-size:48px;color:white" 
+                v-on:click="displayBlock('1')"></button>
         <p>Vores processer<br/> er vigtige</p>
         </div>
-        <div class="icon icon2">
-        <i class="fa fa-exchange" style="font-size:48px;color:white"></i>
+        <div class="icon icon2" >
+        <button class="fa fa-exchange" style="font-size:48px;color:white"
+                v-on:click="displayBlock('2')"></button>
         <p>Gennemsigtighed<br/> er vigtig</p>
         </div>
         <div class="icon icon3">
-        <i class="fa fa-steam-square" style="font-size:48px;color:white"></i>
+        <button class="fa fa-steam-square" style="font-size:48px;color:white"
+                v-on:click="displayBlock('3')"></button>
         <p>Kvalitetsstyring af digitale processer er vigtige</p>
         </div>
         <div class="icon icon4">
-        <i class="fa fa-american-sign-language-interpreting" style="font-size:48px;color:white"></i>
+        <button class="fa fa-american-sign-language-interpreting" style="font-size:48px;color:white" v-on:click="displayBlock('4')"></button>
         <p>End-to-end optimering og automatisering er vigtige</p>
         </div>
         
-    <div class="article-container">
-        <div class="article front-article">
+    <div class="article-container" >        
+        <div class="article front-article" v-show="mainPage">
         <h1>SKAB VÆRDI GENNEM PROCESSER</h1>
         <h3>FLOWINT styrker PROCESSER</h3>
         <p>Kan du sætte hak ved et eller flere af disse punkter, når du stiller dig selv følgende spørgsmål:
@@ -234,19 +237,19 @@ Hvad er vigtigt for, at Jeres virksomhed kan skabe værdi?</p>
                 <button id="kontakt"> Kontakt </button>
             </a>
         </div>
-        <div class="article article1">
+        <div class="article article1" v-show="firstIcon">
         <h3>Vores processer er vigtige</h3>
         <p>Vi er opmærksomme på, at vores processer udgør den måde, vi skaber værdi for vores kunder på. Det er derfor afgørende for vores konkurrenceevne, at digitale forretningsprocesser understøtter kerneydelser og services til vores kunder. Vi ønsker at optimere og udvikle innovative processer med henblik på stadig forbedring af kundeværdi.</p>
         </div>
-        <div class="article article2">
+        <div class="article article2" v-show="secondIcon">
         <h3>Gennemsigtighed er vigtig</h3>
         <p>Optimering af virksomhedens værdikæde er vanskelig, når processer udføres via mange funktioner og features i forskellige IT-systemer, der opleves som uigennemsigtige black-boxe. Kompleksiteten i vores samlede IT-setup hæmmer innovativ forretningsudvikling. Vi ønsker en integreret digital platform, der med gennemsigtighed giver overblik og indsigt i processer og performance.</p>
         </div>
-        <div class="article article3">
+        <div class="article article3" v-show="thirdIcon">
         <h3>Kvalitetsstyring af digitale processer er vigtige</h3>
         <p>Vi konstaterer, at brugen af IT-systemer varierer mellem medarbejdere afhængig af kompetencer og individuel praksis – f.eks. udmøntet i uhensigtsmæssige workarounds, alternative apps, regneark mv. Vi ønsker ensartet høj kvalitet i eksekvering af digitale processer – uden at medarbejdere behøver at referere til flowcharts eller anden dokumentation.</p>
         </div>
-        <div class="article article4">
+        <div class="article article4" v-show="forthContent">
         <h3>End-to-end optimering og automatisering er vigtige</h3>
         <p>For at kunne levere effektive ydelser og services af høj kvalitet til vores kunder, ønsker vi at integrere og optimere værdiskabelse gennem hele værdikæden end-to-end. Vi ønsker at kunne løfte niveauet for integration af tværgående processer – uden at skulle trækkes med ressourcekrævende IT-projekter.</p>
         </div>
@@ -257,11 +260,35 @@ Hvad er vigtigt for, at Jeres virksomhed kan skabe værdi?</p>
 
     
     <script>
-    function changePage(){
-          document.getElementsByClassName('front-article').style.display= 'none';
-          document.getElementsByClassName('article1').style.display = 'block';  
-        }
+new Vue({
+    el:'#divFirst',
+    data:{
+        showmainPage:true,
+        showfirstIcon:false,
+        showsecondIcon:false,
+        showthirdIcon:false,
+        showforthContent:false,
+    },
+    methods:{
+       displayBlock:function(id){
+           this.showmainPage=false;
+            this.showfirstIcon=false;
+            this.showsecondIcon=false;
+            this.showthirdIcon=false;
+            this.showforthContent=false;          
+           if(id=='1')
+               this.showfirstIcon=true;
+           if(id=='2')
+               this.showsecondIcon=true;
+           if(id=='3')
+               this.showthirdIcon=true;
+           if(id=='4')
+               this.showforthContent=true;
+               
+       } 
+    }
     
+})
     
     </script>
     </body>
