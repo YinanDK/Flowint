@@ -98,14 +98,14 @@
         font-size: 40px;
     }
         
-    .box1{
+    #divFirst{
         border: 2px solid #fff;
         background-color: rgba(0,0,0,0.6);
         border-radius: 30px;
         width: 75%;
         position: relative;
         top:75px;
-        margin: 40px auto;
+        margin: 20px auto;
         padding: 10px 10px 0 10px;
         }
         
@@ -115,9 +115,10 @@
         border-radius: 30px;
         width: 100%;
         position: absolute;
-        top:150px;
+        top:120px;
+        left: 0;
         margin: 10px auto;
-        padding: 10px 10px 0 10px;
+        padding: 20px;
         }
         
     .article{
@@ -125,15 +126,49 @@
         }
         
     .article h3{
-        text-align: center;    
+        text-align: center;
         }
         
-    /*.front-article{
+    .article p{
+        float: right;    
+        }
+        
+    .front-article{
         display: block;
         text-align: center;
         padding: 30px;
-        }*/
+        }
+    
+    span p{
+        color: #fff;
+        font-size: 20px;
+        font-family: Dosis;
+        } 
         
+    .p{
+        margin-top: 10px;
+        }
+        
+    #tilbage{
+        float: right;
+        background: #ff9000;
+        padding: 9px 44px;
+        font-size: 18px;
+        font-weight: 600;
+        height: 44px;
+        margin: 10px auto;
+        border: none;
+        box-shadow: none;
+        border-radius: 22px;
+        letter-spacing: -0.01em;
+        color: #fff ;
+        text-align: center;
+/*
+        -webkit-transition: background 200ms ease-in;
+        -moz-transition: background 200ms ease-in;
+        transition: background 200ms ease-in;   
+*/
+        }
    /* .article1{
         display: none;    
         }
@@ -158,7 +193,7 @@
         }
         
     .icon{
-        flex: 2;
+        flex: 1;
         margin: 0 auto;
         text-align: center;
         color: #fff;
@@ -203,26 +238,26 @@
     </header>
 
 
-<div id="divFirst" class="box1">
+<div id="divFirst">
 	<div class="process-nav-bar">
 		<div class="icon icon1">
-        <button class="fa fa-cogs" style="font-size:48px;color:white" 
-                v-on:click="displayBlock('1')"></button>
-        <p>Vores processer<br/> er vigtige</p>
+        <span class="fa fa-cogs" style="font-size:48px;color:white" 
+                v-on:click="displayBlock('1')">
+        <p class="p">Processer</p></span>
         </div>
         <div class="icon icon2" >
-        <button class="fa fa-exchange" style="font-size:48px;color:white"
-                v-on:click="displayBlock('2')"></button>
-        <p>Gennemsigtighed<br/> er vigtig</p>
+        <span class="fa fa-exchange" style="font-size:48px;color:white"
+                v-on:click="displayBlock('2')">
+        <p class="p">Gennemsigtighed</p></span>
         </div>
         <div class="icon icon3">
-        <button class="fa fa-steam-square" style="font-size:48px;color:white"
-                v-on:click="displayBlock('3')"></button>
-        <p>Kvalitetsstyring af digitale processer er vigtige</p>
+        <span class="fa fa-steam-square" style="font-size:48px;color:white"
+                v-on:click="displayBlock('3')">
+        <p class="p">Kvalitetsstyring</p></span>
         </div>
         <div class="icon icon4">
-        <button class="fa fa-american-sign-language-interpreting" style="font-size:48px;color:white" v-on:click="displayBlock('4')"></button>
-        <p>End-to-end optimering og automatisering er vigtige</p>
+        <span class="fa fa-american-sign-language-interpreting" style="font-size:48px;color:white" v-on:click="displayBlock('4')">
+        <p>End-to-end optimering og automatisering</p></span>
         </div>
         
     <div class="article-container" >        
@@ -232,28 +267,41 @@
         <p>Kan du sætte hak ved et eller flere af disse punkter, når du stiller dig selv følgende spørgsmål:
 Hvad er vigtigt for, at Jeres virksomhed kan skabe værdi?</p>
         <img src="image/process_flowint.dk_.png">
-        <p>Kontakt os for uforpligtende dialog om hvordan FLOWINT kan understøtte Jeres forretning</p>
+        <p>tilbage os for uforpligtende dialog om hvordan FLOWINT kan understøtte Jeres forretning</p>
         <a href="contact.html">
-                <button id="kontakt"> Kontakt </button>
+                <span id="kontakt"> Kontakt </span>
             </a>
         </div>
         <div class="article article1" v-show="firstIcon">
         <h3>Vores processer er vigtige</h3>
         <p>Vi er opmærksomme på, at vores processer udgør den måde, vi skaber værdi for vores kunder på. Det er derfor afgørende for vores konkurrenceevne, at digitale forretningsprocesser understøtter kerneydelser og services til vores kunder. Vi ønsker at optimere og udvikle innovative processer med henblik på stadig forbedring af kundeværdi.</p>
+            <div class="fa fa-cogs" style="font-size:200px;color:white"></div>
+        <a href="processer.html">
+                <span id="tilbage"> Tilbage </span>
+            </a>
         </div>
         <div class="article article2" v-show="secondIcon">
         <h3>Gennemsigtighed er vigtig</h3>
         <p>Optimering af virksomhedens værdikæde er vanskelig, når processer udføres via mange funktioner og features i forskellige IT-systemer, der opleves som uigennemsigtige black-boxe. Kompleksiteten i vores samlede IT-setup hæmmer innovativ forretningsudvikling. Vi ønsker en integreret digital platform, der med gennemsigtighed giver overblik og indsigt i processer og performance.</p>
+        <a href="processer.html">
+                <span id="tilbage"> Tilbage </span>
+            </a>
         </div>
         <div class="article article3" v-show="thirdIcon">
         <h3>Kvalitetsstyring af digitale processer er vigtige</h3>
         <p>Vi konstaterer, at brugen af IT-systemer varierer mellem medarbejdere afhængig af kompetencer og individuel praksis – f.eks. udmøntet i uhensigtsmæssige workarounds, alternative apps, regneark mv. Vi ønsker ensartet høj kvalitet i eksekvering af digitale processer – uden at medarbejdere behøver at referere til flowcharts eller anden dokumentation.</p>
+        <a href="processer.html">
+                <span id="tilbage"> Tilbage </span>
+            </a>
         </div>
         <div class="article article4" v-show="forthContent">
         <h3>End-to-end optimering og automatisering er vigtige</h3>
         <p>For at kunne levere effektive ydelser og services af høj kvalitet til vores kunder, ønsker vi at integrere og optimere værdiskabelse gennem hele værdikæden end-to-end. Vi ønsker at kunne løfte niveauet for integration af tværgående processer – uden at skulle trækkes med ressourcekrævende IT-projekter.111</p>
+        <a href="processer.html">
+                <span id="tilbage"> Tilbage </span>
+            </a>
         </div>
-        </div>
+    </div>
         
 	</div>
 </div>
