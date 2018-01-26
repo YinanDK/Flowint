@@ -99,7 +99,7 @@
         font-size: 40px;
     }
         
-    .box1{
+    .process-container{
         border: 2px solid #fff;
         background-color: rgba(0,0,0,0.6);
         border-radius: 30px;
@@ -123,6 +123,9 @@
         
     .article{
         color: #fff;
+        display: flex;
+        flex-flow:column;
+        align-items: center;
         }
         
     .article h3{
@@ -204,24 +207,22 @@
     </header>
 
 
-<div id="divFirst" class="box1">
+<div id="divFirst" class="process-container">
 	<div class="process-nav-bar">
-		<div id="ProcesserButton" class="icon icon1">
+		<div id="ProcesserButton" class="icon">
         <span  class="fa fa-cogs" style="font-size:48px;" ></span>
         <p>Vores processer<br/> er vigtige</p>
         </div>
-        <div id="gegnemsigtighedButton" class="icon icon2" >
-        <span class="fa fa-exchange" style="font-size:48px;"
-                v-on:click="displayBlock('2')"></span>
+        <div id="gegnemsigtighedButton" class="icon" >
+        <span class="fa fa-handshake-o" style="font-size:48px;"></span>
         <p>Gennemsigtighed<br/> er vigtig</p>
         </div>
-        <div id="kvalitetsstyringButton" class="icon icon3">
-        <span class="fa fa-steam-square" style="font-size:48px;"
-                v-on:click="displayBlock('3')"></span>
+        <div id="kvalitetsstyringButton" class="icon">
+        <span class="fa fa-microchip" style="font-size:48px;"></span>
         <p>Kvalitetsstyring af digitale processer er vigtige</p>
         </div>
-        <div id="optimeringButton"class="icon icon4">
-        <span  class="fa fa-american-sign-language-interpreting" style="font-size:48px;" v-on:click="displayBlock('4')"></span>
+        <div id="optimeringButton"class="icon">
+        <span  class="fa fa-american-sign-language-interpreting" style="font-size:48px;"></span>
         <p>End-to-end optimering og automatisering er vigtige</p>
         </div>
         
