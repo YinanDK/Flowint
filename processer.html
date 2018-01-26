@@ -268,17 +268,19 @@ Hvad er vigtigt for, at Jeres virksomhed kan skabe værdi?</p>
     		$("#firstPart").hide();
 
     		$("#ProcesserButton").on({
-        						mouseenter: function(){
+        						mouseover: function(){
             					$(this).css("color", "#000");
             					$("#mainPage").hide();
             					$("#firstPart").show();
+                                $("#secondPart").hide();
+            $("#thirdPart").hide();
+            $("#forthPart").hide();
 
             					
         },  
 						         mouseleave: function(){
 						            $(this).css("color", "#fff");
-						            $("#mainPage").show();
-            					    $("#firstPart").hide();
+						          
         },
     	});
     		$("#gegnemsigtighedButton").on({
@@ -286,6 +288,9 @@ Hvad er vigtigt for, at Jeres virksomhed kan skabe værdi?</p>
             					$(this).css("color", "#000");
             					$("#mainPage").hide();
             					$("#secondPart").show();
+                                $("#thirdPart").hide();
+            $("#forthPart").hide();
+            $("#firstPart").hide();
 
             					
         },  
