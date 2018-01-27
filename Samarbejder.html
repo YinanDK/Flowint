@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>Samarbejder</title>
+    <!-- <link rel="stylesheet" href="stylesheet/styles.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="asset/css/bootstrap.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" lang="da" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <script type="text/javascript" src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style type="text/css">
+    body {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.428571429;
+        background-color: #77BC47;
+    }
+
+    .navigation {
+        /*      padding-top: 30px; */
+      padding-bottom: 30px;
+        background-color: #1994FC;
+        box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.15);
+        font-size: 14px;
+        font-weight: 600;
+
+        width: 100%;
+        z-index: 1;
+        line-height: 61px;
+        padding: 20px 25px;
+        position: fixed;
+        top: 0;
+    }
+
+    .page-logo {
+        margin-top: 0px;
+        float: left;
+    }
+
+    .navbar-right {
+        float: right;
+    }
+
+    .navbar-right ul {
+        margin-bottom: 0px;
+    }
+
+    .navbar-right a {
+        text-decoration: none;
+        padding: 10px;
+        font-family: Arial;
+        font-weight: 900;
+        color: #fff;
+    }
+
+    .navbarlink:hover {
+        color: #000;
+    }
+
+    .navbarlogo {
+        text-decoration: none;
+        font-family: Arial;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 50px;
+        color: #2CF3D4;
+    }
+
+    .navbarlogo:hover {
+        text-decoration: underline;
+    }
+
+    .video-container {
+        z-index: -100;
+        width: 100%;
+        height: 75%;
+        overflow: hidden;
+        /*position: absolute;*/
+        /*top: -300;*/
+        left: 0;
+        /* margin-right: 0px;
+        margin-top: 61px;*/
+    }
+
+    #myvideo {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+        
+    .process-container{
+        border: 2px solid #fff;
+        background-color: rgba(0,0,0,0.6);
+        border-radius: 30px;
+        width: 75%;
+        position: relative;
+        top:75px;
+        margin: 40px auto;
+        padding: 10px 10px 0 10px;
+        }
+        
+    .article-container{
+        border: 2px solid #fff;
+        background-color: rgba(0,0,0,0.6);
+        border-radius: 30px;
+        width: 100%;
+        position: absolute;
+        top:150px;
+        right: 0;
+        margin: 10px auto;
+        padding: 10px 10px 0 10px;
+        }
+        
+    .article{
+        color: #fff;
+        display: flex;
+        flex-flow:column;
+        align-items: center;
+        text-align: center; 
+        }
+
+        
+    .process-nav-bar{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        }
+        
+    .icon{
+        flex: 2;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        }
+        
+    #kontakt{
+        background: #ff9000;
+        padding: 9px 44px;
+        font-size: 18px;
+        font-weight: 600;
+        height: 44px;
+        margin: 10px auto;
+        border: none;
+        box-shadow: none;
+        border-radius: 22px;
+        letter-spacing: -0.01em;
+        color: #fff ;
+        text-align: center;
+        -webkit-transition: background 200ms ease-in;
+        -moz-transition: background 200ms ease-in;
+        transition: background 200ms ease-in;
+    }
+        
+        
+        @media only screen and (min-width: 773px) and (max-width: 1024px){
+            .navigation {
+                margin-bottom: 20px;
+    }
+            .article-container{
+                position: absolute;
+                top:200px;
+        }
+        }
+        @media only screen and (max-width: 773px){
+            .
+        }
+        
+        
+</style>
+
+</head>
+<body>
+	<header>
+        <div class="header">
+            <nav class="navigation">
+                <img src="image/LogoRobot_flowint.dk_.gif" class="page-logo" width="60px">
+                <a href="index.html" class="navbarlogo">FlowINT</a>
+                <div class="navbar-right">
+                    <ul>
+                        <a href="Flowint.html" class="navbarlink">what is FlowINT</a>
+                        <a href="#aboutme" class="navbarlink">solutions</a>
+                        <a href="contact.html" class="navbarlink">Contact</a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+<div id="divFirst" class="process-container">
+	<div class="process-nav-bar">
+		<div id="ProcesserButton" class="icon">
+        <span  class="fa fa-users" style="font-size:48px;" ></span>
+        <p>Vores sammenhængskraft er vigtig</p>
+        </div>
+        <div id="gegnemsigtighedButton" class="icon" >
+        <span class="fa fa-comments" style="font-size:48px;"></span>
+        <p>Samarbejde på tværs af ansvarsområder er vigtigt</p>
+        </div>
+        <div id="kvalitetsstyringButton" class="icon">
+        <span class="fa fa-refresh" style="font-size:48px;"></span>
+        <p>Engagement er vigtigt</p>
+        </div>
+        <div id="optimeringButton"class="icon">
+        <span  class="fa fa-share-alt-square" style="font-size:48px;"></span>
+        <p>Real time collaboration</p>
+        </div>
+        
+    <div class="article-container" >        
+        <div class="article front-article" id="mainPage">
+        <h1>SKAB VÆRDI GENNEM SAMARBEJDE</h1>
+        <h3>FLOWINT styrker SAMARBEJDE</h3>
+        <p>Kan du sætte hak ved et eller flere af disse punkter, når du stiller dig selv følgende spørgsmål:
+Hvad er vigtigt for, at Jeres virksomhed kan skabe værdi?</p>
+        <img src="image/samarbejde1_flowint.dk_.png">
+        <p>Kontakt os for uforpligtende dialog om hvordan FLOWINT kan understøtte Jeres forretning</p>
+        <a href="contact.html">
+                <button id="kontakt"> Kontakt </button>
+            </a>
+        </div>
+        <div class="article" id="firstPart" >
+        <h3>Vores sammenhængskraft er vigtig</h3>
+        <p>Vi er bedst, når vi er på samme spor. Vores gennemslagskraft overfor kunder og samarbejdspartnere er afhængig af, at ledere og medarbejdere forstår den udstukne retning. Den enkelte medarbejder skal have en klar fornemmelse af, hvordan han eller hun bidrager til helheden. Det understøtter positiv virksomhedskultur og arbejdsmiljø. Vi ønsker at styrke produktiv indsigt i virksomhedens strategi, mål og operationelle drift.</p>
+        </div>
+        <div class="article" id="secondPart">
+        <h3>Samarbejde på tværs af ansvarsområder er vigtigt</h3>
+        <p>Vores afdelinger og arbejdsfunktioner anvender forskellige IT-systemer med forskellige brugerflader og arbejdsmetoder. Forskellige ansvar og synsvinkler på daglig drift har tendens til at skabe siloer og suboptimering, som hæmmer tværgående dialog og samarbejde. Vi ønsker en mere ensartet og integreret digital platform, som skaber gennemsigtighed og faciliterer tværfaglig kreativ dialog som grundlag for innovation.</p>
+        </div>
+        <div class="article" id="thirdPart">
+        <h3>Engagement er vigtigt</h3>
+        <p>Vores virksomhed er ikke tjent med brok og stress, som kommer af frustration på jobbet. Vi er opmærksomme på, at mennesker har behov for indflydelse på egen situation – også deres arbejdssituation. Og vi tror på værdien af, at den enkelte har mulighed for at påvirke arbejdsprocesser. Vi ønsker bedre værktøjer til direkte indflydelse på digitale arbejdsprocesser for at øge medarbejdernes tilfredshed og engagement i virksomheden.</p>
+        </div>
+        <div class="article" id="forthPart">
+        <h3>Real time collaboration er vigtig</h3>
+        <p>Med sociale medier har vi lært løbende kommunikation i communities. Videndeling og koordinering med vores kolleger og partnere i real time, kan imidlertid være en udfordring, idet data og informationer opstår og bearbejdes på forskellige måder i forskellige systemer. Vi har brug for en digital platform, som samler data og information, giver intuitivt overblik og systematisk adgang til opgaver på tværs af ansvarsområder.</p>
+        </div>
+        </div>
+        
+	</div>
+</div>
+
+    
+    <script>
+    	$(document).ready(function(){
+    		$("#mainPage").show();
+    		$("#secondPart").hide();
+    		$("#thirdPart").hide();
+    		$("#forthPart").hide();
+    		$("#firstPart").hide();
+
+    		$("#ProcesserButton").on({
+        						mouseover: function(){
+            					$(this).css("color", "#000");
+            					$("#mainPage").hide();
+            					$("#firstPart").show();
+                                $("#secondPart").hide();
+            $("#thirdPart").hide();
+            $("#forthPart").hide();
+
+            					
+        },  
+						         mouseleave: function(){
+						            $(this).css("color", "#fff");
+						          
+        },
+    	});
+    		$("#gegnemsigtighedButton").on({
+        						mouseenter: function(){
+            					$(this).css("color", "#000");
+            					$("#mainPage").hide();
+            					$("#secondPart").show();
+                                $("#thirdPart").hide();
+            $("#forthPart").hide();
+            $("#firstPart").hide();
+
+            					
+        },  
+						         mouseleave: function(){
+						            $(this).css("color", "#fff");
+						            $("#mainPage").show();
+            					    $("#secondPart").hide();
+        },
+    	});
+    		$("#kvalitetsstyringButton").on({
+        						mouseenter: function(){
+            					$(this).css("color", "#000");
+            					$("#mainPage").hide();
+            					$("#thirdPart").show();
+
+            					
+        },  
+						         mouseleave: function(){
+						            $(this).css("color", "#fff");
+						            $("#mainPage").show();
+            					    $("#thirdPart").hide();
+        },
+    	});
+    		$("#optimeringButton").on({
+        						mouseenter: function(){
+            					$(this).css("color", "#000");
+            					$("#mainPage").hide();
+            					$("#forthPart").show();
+
+            					
+        },  
+						         mouseleave: function(){
+						            $(this).css("color", "#fff");
+						            $("#mainPage").show();
+            					    $("#forthPart").hide();
+        },
+    	});
+
+    		
+
+    });
+// new Vue({
+//     el:'#divFirst',
+//     data:{
+//         mainPage:true,
+//         firstIcon:false,
+//         secondIcon:false,
+//         thirdIcon:false,
+//         forthContent:false,
+//     },
+//     methods:{
+//        displayBlock:function(id){
+//            this.mainPage=false;
+//             this.firstIcon=false;
+//             this.secondIcon=false;
+//             this.thirdIcon=false;
+//             this.forthContent=false;          
+//            if(id=='1')
+//                this.firstIcon=true;
+//            if(id=='2')
+//                this.secondIcon=true;
+//            if(id=='3')
+//                this.thirdIcon=true;
+//            if(id=='4')
+//                this.forthContent=true;
+               
+//        } 
+//     }
+    
+// })
+    
+    </script>
+    </body>
+</html>
