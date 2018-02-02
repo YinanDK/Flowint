@@ -97,6 +97,7 @@
             transition: .5s;
         }
         
+/*
         .menu-icon.active span{
             position: absolute;
             width: calc(100%-16px);
@@ -113,6 +114,7 @@
             transform: rotate(-45deg);
         }
         
+*/
         .sidebar{
             position: fixed;
             top: 100px;
@@ -150,6 +152,7 @@
             padding: 10px 0;
             color:#fff;
             font-size: 18px;
+            text-decoration: none;
         }
         
         .sidebar .page-menu li a:hover{
@@ -477,13 +480,13 @@ Hvad er vigtigt for, at Jeres virksomhed kan skabe værdi?</p>
         
         
     $(document).ready(function(){
-        $(".menu-icon").click(function(){
-            $(".menu-icon").toggleClass("active")
-        })
+//        $(".menu-icon").click(function(){
+//            $(".menu-icon").toggleClass("active")
+//        })
         $(".menu-icon").click(function(){
             $(".sidebar").toggleClass("active")
         })
-    })
+    });
 // new Vue({
 //     el:'#divFirst',
 //     data:{
