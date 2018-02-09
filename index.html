@@ -286,6 +286,30 @@
     .footerHead{
        color:#000;   
     }
+        
+    #myvideo{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+        
+    @media (min-aspect-ratio: 16/9) {
+    #myvideo {
+        height: 300%;
+        top: -100%;
+  }
+    }
+
+    @media (max-aspect-ratio: 16/9) {
+    #myvideo {
+        width: 300%;
+        left: -100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+  }
+    }
 
     /* .Processer,
     .Samarbejder,
@@ -325,6 +349,11 @@
             </nav>
         </div>
     </header>
+    <div class="video-container">
+                <video autoplay loop muted id="myvideo">
+                    <source src="video/flowint%20new.mp4" type="video/mp4">
+                </video>
+            </div>
     <!--  FIRST DIV -->
     <div id="aboutme" class="container contentAboutme">
         <h2 class="mainHead">Grow your business with Flowint</h2>
@@ -411,7 +440,7 @@
                     <img src="image/aprocess_flowint.dk_.png" class="grid-image">
                 </div>
                 <h4 class="headOptimizer">
-                    <a class="linkOptimizer" href="#">Agility</a>
+                    <a class="linkOptimizer" href="Agility.html">Agility</a>
                 </h4>
                 <div class="line">
                     <p>
@@ -427,11 +456,11 @@
                     <img src="image/relationer2_flowint.dk_.png" class="grid-image">
                 </div>
                 <h4 class="headOptimizer">
-                    <a class="linkOptimizer" href="">Co-opreation</a>
+                    <a class="linkOptimizer" href="RELATIONER.html">Relationer</a>
                 </h4>
                 <div class="line">
                     <p>
-                        content of Co-opreation
+                        content of Relationer
                     </p>
                 </div>
                 <!-- <p>
