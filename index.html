@@ -91,7 +91,29 @@
     h3 {
         padding-top: 60px;
     }
+    #myvideo{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+        
+    @media (min-aspect-ratio: 16/9) {
+    #myvideo {
+        height: 300%;
+        top: -100%;
+  }
+    }
 
+    @media (max-aspect-ratio: 16/9) {
+    #myvideo {
+        width: 300%;
+        left: -100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+  }
+    }
     .contentAboutme,
     .contentSmallFour {
         width: 100%;
@@ -107,11 +129,11 @@
     .content-animation{
         padding-left: 70px;
     }
-
-    .arrow {
-
+    .robotPar,
+    .performPar,
+    .designPar{
+        margin: 50px;
     }
-
     .arrow{
         position: absolute;
         left: 44%;
@@ -187,14 +209,13 @@
         }
     }
 
+
+
     .contentOptimize,
     .contentContact {
         height: 350px;
         padding-left: 30px;
         padding-right: 30px;
-    }
-    .contentOptimize{
-
     }
 
     .linkOptimizer {
@@ -220,19 +241,19 @@
     }
 
     .Processer {
-        background-color: #FDC437;
+        background-color:#B9B925;
     }
 
     .Samarbejder {
-        background-color: #77BC47
+        background-color: #1A98FE;
     }
 
     .Agility {
-        background-color: #2CDA9D;
+        background-color: #EA4E49;
     }
 
     .Co-opreation {
-        background-color: #E8453E;
+        background-color: #3EF1D4;
     }
     #email,
     #name{
@@ -287,49 +308,9 @@
        color:#000;   
     }
         
-    #myvideo{
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-    }
-        
-    @media (min-aspect-ratio: 16/9) {
-    #myvideo {
-        height: 300%;
-        top: -100%;
-  }
-    }
+    
 
-    @media (max-aspect-ratio: 16/9) {
-    #myvideo {
-        width: 300%;
-        left: -100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 0;
-  }
-    }
 
-    /* .Processer,
-    .Samarbejder,
-    .Agility,
-    .Co-opreation: hover {
-        background-color: #000;
-    }*/
-    /*.contentSmallFour{
-       padding-left: 30px;
-    }*/
-    /*.button:hover { background:#fff; }*/
-    /*.robotDiv{
-  display: none;
-}
-.designDiv{
-  display: none;
-}*/
-    /*.performDiv{
-  display: none;
-}*/
     </style>
 </head>
 
@@ -367,20 +348,23 @@
                 </div>
                 <div id="content-flowrobot" class="robotDiv contentConsistentCircle" style="display: none; width: 100%;">
                     <h3>Flow Robot</h3>
-                    <p>
-                        content of flow robot <a href="#" class="readMe">［Read me］</a>
+                    <p class="robotPar">
+                        FlowRobot er en digital robot, som hjælper med at styre og udføre dine arbejdsprocesser.<br>
+                        FlowRobot er din assistent – din kvikke hjælper, som udfører rutine-arbejdet.<br>
+                        FlowRobot er rigtig god til huske og ved derfor altid, hvordan hver proces gennemføres fra start til slut.
+                         <a href="#" class="readMe">［Read me］</a>
                     </p>
                 </div>
                 <div id="content-flowdesign" class="designDiv contentConsistentCircle" style="display: none; width: 100%;">
                     <h3>Flow Design</h3>
-                    <p>
-                        content of flow design <a href="#" class="readMe contentConsistentCircle">［Read me］</a>
+                    <p class="designPar">
+                        Med FlowDesigner kan I designe og automatisere interaktive processer ligesom I ønsker – uden programmering og uden behov for IT-folk. <a href="#" class="readMe contentConsistentCircle">［Read me］</a>
                     </p>
                 </div>
                 <div id="content-flowperform" class="performDiv" style="display: none; width: 100%;">
                     <h3>Flow Perform</h3>
-                    <p>
-                        content of flow perform <a href="#" class="readMe contentConsistentCircle">［Read me］</a>
+                    <p class="performPar">
+                        LowPerfomance giver indsigt i jeres drifts-performance i alle digitale processer på tværs af virksomheden. På et overordnet niveau har I et lynhurtigt real-time overblik over total performance på tværs af virksomheden på et enkelt skærmbillede. <a href="#" class="readMe contentConsistentCircle">［Read me］</a>
                     </p>
                 </div>
             </div>
@@ -641,8 +625,8 @@
 
         var ctx = document.getElementById('canvas').getContext('2d'); //get canvas is
 
-        image1.src = "image/flowrobot.svg";
-        image2.src = "image/flowrobot2.svg";
+        image1.src = "image/flowrobot2.svg";
+        image2.src = "image/flowrobot.svg";
         image3.src = "image/flowperform.svg";
         // image1.id = "image1";
         document.getElementById('canvas').addEventListener("mousedown", function(e) { //create event
