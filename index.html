@@ -22,6 +22,8 @@
         font-size: 18px;
         line-height: 1.428571429;
         background-color: #f3f3f3;
+        padding: 0;
+        margin: 0;
     }
 
     .navigation {
@@ -36,8 +38,10 @@
         z-index: 1;
         line-height: 61px;
         padding: 5px 25px;
+/*
         position: fixed;
         top: 0;
+*/
     }
 
     .page-logo {
@@ -84,9 +88,11 @@
         clear: both;
     }
 
+/*
     .mainHead {
         padding-top: 65px;
     }
+*/
 
     h3 {
         padding-top: 60px;
@@ -108,8 +114,8 @@
         padding-left: 70px;
     }
 
-    .arrow {
-
+    canvas#canvas.canvasAboutMe {
+        width: 450px;
     }
 
     .arrow{
@@ -189,13 +195,11 @@
 
     .contentOptimize,
     .contentContact {
-        height: 350px;
+        height: 300px;
         padding-left: 30px;
         padding-right: 30px;
     }
-    .contentOptimize{
-
-    }
+    
 
     .linkOptimizer {
         color: #fff;
@@ -207,6 +211,7 @@
         border-width: 1px;
         border-color: #fff;
         padding-bottom: 20px;
+        padding-top: 40px;
     }
 
     .contentImage {
@@ -217,23 +222,37 @@
         width: 250px;
         height: 250px;
         padding-top: 50px;
+        float: left;
+        margin-right: 10px;
     }
 
     .Processer {
         background-color: #FDC437;
     }
+        .Processer:hover{
+            opacity: 0.92;
+        }
 
     .Samarbejder {
         background-color: #77BC47
     }
-
+        
+        .Samarbejder:hover{
+            opacity: 0.92;
+        }
     .Agility {
         background-color: #2CDA9D;
     }
+        .Agility:hover{
+            opacity: 0.92;
+        }
 
     .Co-opreation {
         background-color: #E8453E;
     }
+        .Co-opreation:hover{
+            opacity: 0.92;
+        }
     #email,
     #name{
     padding: 6px 12px;
@@ -287,15 +306,25 @@
        color:#000;   
     }
         
-    #myvideo{
+    video{
         width: 100%;
-        height: 100vh;
-        overflow: hidden;
+/*        height: 100vh;*/
+/*        overflow: hidden;*/
+/*
+        position:relative;
+                top: 72px;
+                right: 0;
+*/
     }
         
+        @media only screen and (min-width: 300px) and (max-width: 1154px){
+            video{
+                
+            }
+        }
+/*
     @media (min-aspect-ratio: 16/9) {
     #myvideo {
-        height: 300%;
         top: -100%;
   }
     }
@@ -310,6 +339,7 @@
         margin: 0;
   }
     }
+*/
 
     /* .Processer,
     .Samarbejder,
@@ -351,7 +381,7 @@
     </header>
     <div class="video-container">
                 <video autoplay loop muted id="myvideo">
-                    <source src="video/flowint%20new.mp4" type="video/mp4">
+                    <source src="video/flowintt%20new.mp4" type="video/mp4">
                 </video>
             </div>
     <!--  FIRST DIV -->
@@ -384,15 +414,6 @@
                     </p>
                 </div>
             </div>
-            <!-- <p>
-            <div class="video-container">
-                <video autoplay loop muted id="myvideo">
-                    <source src="video/background.mp4" type="video/mp4">
-                </video>
-            </div>
-            <!-content of about me <a href="#" class="readMe">［Read me］</a> -->
-            <!--  </p> -->
-            
         </div>
         <div class="arrow arrow1 ">
             keep going
@@ -412,7 +433,9 @@
                 </h4>
                 <div class="line">
                     <p>
-                        content of processer
+                        SKAB VÆRDI GENNEM PROCESSER
+FLOWINT styrker PROCESSER
+Kan du sætte hak ved et eller flere af disse punkter, når du stiller dig selv følgende spørgsmål: Hvad er vigtigt for, at Jeres virksomhed kan skabe værdi? ....<a href="processer.html">Læs mere</a>
                     </p>
                 </div>
                 <!--   <p>
@@ -420,6 +443,7 @@
                </p> -->
             </div>
             <div class="col-sm-6 contentOptimize Samarbejder">
+                
                 <div class="contentImage">
                     <img class="grid-image" src="image/samarbejde2_flowint.dk_.png">
                 </div>
@@ -431,10 +455,7 @@
                         content of samarbejder
                     </p>
                 </div>
-                <!--   <p>
-                    content of Samarbejder <a href="#" class="readMe">［Read me］</a>
-                </p> -->
-            </div>
+                </div>
             <div class="col-sm-6 contentOptimize Agility">
                 <div class="contentImage">
                     <img src="image/aprocess_flowint.dk_.png" class="grid-image">
