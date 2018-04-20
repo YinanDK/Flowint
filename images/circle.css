@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@font-face { font-family:"Segoe Print";src:url("#FontID1") format(svg)}
+@font-face { font-family:"Arial Black";src:url("#FontID0") format(svg)}
+.str8 {stroke-width:3.64567}
+.str6 {stroke-width:1.6378}
+.str11 {stroke-width:1.77953}
+.str4 {stroke-width:3.80709}
+.str0 {stroke:#201E1E;stroke-width:222.22}
+.str1 {stroke:#02B5BA;stroke-width:138.886}
+.str2 {stroke:#B9B900;stroke-width:138.886}
+.str3 {stroke:#D61A19;stroke-width:138.886}
+.str5 {stroke:#02B5BA;stroke-width:3}
+.str10 {stroke:#03FF4A;stroke-width:3}
+.str9 {stroke:#D61A19;stroke-width:3}
+.str7 {stroke:#FFC20F;stroke-width:3}
+.fil0 {fill:none}
+.fil10 {fill:#029BA0}
+.fil1 {fill:#02B5BA}
+.fil4 {fill:#02B5BA}
+.fil6 {fill:#03FF4A}
+.fil8 {fill:#959500}
+.fil9 {fill:#AC1414}
+.fil2 {fill:#B9B900}
+.fil3 {fill:#D61A19}
+.fil7 {fill:#D61A19}
+.fil5 {fill:#FFC20F}
+.fnt0 {font-weight:900;font-size:788.409px;font-family:'Arial Black'}
+.fnt4 {font-weight:900;font-size:788.409px;font-family:'Arial Black'}
+.fnt2 {font-weight:900;font-size:822.488px;font-family:'Arial Black'}
+.fnt5 {font-weight:normal;font-size:1684.5px;font-family:'Segoe Print'}
+.fnt1 {font-weight:normal;font-size:1829.95px;font-family:'Segoe Print'}
+.fnt3 {font-weight:normal;font-size:1829.95px;font-family:'Segoe Print'}

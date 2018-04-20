@@ -1,0 +1,187 @@
+html, body{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "lato", sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+header{
+    width: 100%;
+    z-index: 5;
+}
+
+.logo{
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbarlogo{
+    color: #000;
+}
+
+.navbarlogo:hover{
+    color: #0091ea;
+    text-decoration: none;
+}
+
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    border-bottom: solid 3px #0091ea;
+    box-shadow: 0 3px 20px rgba(0, 145, 234,0.5);
+}
+
+nav ul{
+    list-style: none;
+    background: #ffffff;
+    overflow: hidden;
+    color: #000;
+    padding: 0;
+    text-align:right;
+    margin: 0;
+    transition: 1s;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+    transition-duration: .3s;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color: #0091ea;
+    text-decoration: none;
+}
+
+.menu-icon{
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.tak{
+    position: relative;
+    width: 100%;
+    padding: 120px 30px;
+    text-align: center;
+}
+
+.check{
+    width: 15%;
+}
+
+.survey{
+    background-color: #0091ea;
+    color: #ffffff;
+    border: solid 2px #0091ea;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 145, 234,0.3);
+    transition-duration: .3s;
+    padding: 15px;
+    font-size: 30px;
+}
+
+a{
+    color: #ffffff;
+}
+
+.survey a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media(max-width: 580px){
+    .logo{
+        position: fixed;
+        top: 0;
+        margin: 6px 36px;
+    }
+    
+    nav ul{
+        max-height: 0px;
+        background: #000;
+    }
+    
+    nav.black ul{
+        background: #000;
+    }
+    
+    .navShowing{
+        max-height: 20em;
+    }
+    
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+    
+    .menu-icon{
+        display: block;
+    }
+    
+}
+
+@media(min-width: 580px) and (max-width:785px){
+    .logo{
+        position: fixed;
+        top: 0;
+        margin: 6px 36px;
+    }
+    
+    nav ul{
+        max-height: 0px;
+        background: #000;
+    }
+    
+    nav.black ul{
+        background: #000;
+    }
+    
+    .navShowing{
+        max-height: 20em;
+    }
+    
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+    
+    .menu-icon{
+        display: block;
+    }
+  
+
+    
+    }
